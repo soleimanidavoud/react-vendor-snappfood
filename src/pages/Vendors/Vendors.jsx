@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { sagaActions } from "../../app/sagas/sagaActions";
-import { selectVendors } from "../../app/features/vendors/vendorsSlice";
+import { sagaActions } from "../../data/sagas/sagaActions";
+import { selectVendors } from "../../data/slices/vendorsSlice";
 import { FixedSizeList as List } from "react-window";
 import InfiniteLoader from "react-window-infinite-loader";
 import AutoSizer from "react-virtualized-auto-sizer";
@@ -29,11 +29,8 @@ const Vendors = (props) => {
 
   const isItemLoaded = (index) => !!vendorList[index];
 
-  const handleLoadMore = () => {
-    setTimeout(() => {
-      setPage((prevState) => prevState + 1);
-    }, 1000);
-  };
+  const handleLoadMore = () => setPage((prevState) => prevState + 1);
+
   return (
     <div className={`${styles["wrapper"]}`}>
       <AutoSizer>

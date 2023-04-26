@@ -9,11 +9,3 @@ export const toEnglishDigits = (value) => {
   }
   return value;
 };
-// eslint-disable-next-line no-extend-native
-String.prototype.toPersianDigits = function () {
-  return toPersianDigits(this);
-};
-// eslint-disable-next-line no-extend-native
-String.prototype.toEnglishDigits = function () {
-  return toEnglishDigits(this);
-};

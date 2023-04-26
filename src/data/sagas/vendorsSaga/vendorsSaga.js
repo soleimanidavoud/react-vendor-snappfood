@@ -1,6 +1,6 @@
 import { call, put } from "redux-saga/effects";
 import Axios from "axios";
-import { add } from "../../features/vendors/vendorsSlice";
+import { add } from "../../slices/vendorsSlice";
 
 const baseApiEndpoint = process.env.REACT_APP_REST_ENDPOINT;
 
