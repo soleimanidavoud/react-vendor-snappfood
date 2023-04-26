@@ -32,7 +32,7 @@ const Vendors = (props) => {
   const handleLoadMore = () => setPage((prevState) => prevState + 1);
 
   return (
-    <div className={`${styles["wrapper"]}`}>
+    <div className={styles["wrapper"]}>
       <AutoSizer>
         {({ height, width }) => (
           <InfiniteLoader
