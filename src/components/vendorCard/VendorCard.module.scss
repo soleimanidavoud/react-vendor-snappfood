@@ -1,0 +1,83 @@
+@import "../../styles/globals/mixins.scss";
+
+.vendor {
+  width: 100%;
+  height: 100%;
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+  }
+
+  &__card {
+    width: calc(100% - 35px);
+    height: calc(100% - 20px);
+    border-radius: 6px;
+    border: solid 0.5px #e6e6e6;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+
+    &--header {
+      height: 134px;
+      overflow: hidden;
+      width: 100%;
+
+      &--image {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &--content {
+      padding: 12px;
+
+      &__head {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &--title {
+          flex-grow: 1;
+          flex-wrap: nowrap;
+          text-overflow: ellipsis;
+          margin-block-end: 0;
+          margin-block-start: 0;
+        }
+
+        &--star {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2px 4px 2px 2px;
+          border-radius: 4px;
+          height: 15px;
+          background-color: rgba(63, 126, 0, 0.08);
+        }
+      }
+      &__desc {
+        margin-top: 7px;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      &__foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--price {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

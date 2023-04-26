@@ -1,0 +1,55 @@
+@import "mixins";
+@include fontFace;
+
+body {
+  font-family: IranSans;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.color-text {
+  color: $text;
+}
+
+.color-text-light {
+  color: $text-light;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
